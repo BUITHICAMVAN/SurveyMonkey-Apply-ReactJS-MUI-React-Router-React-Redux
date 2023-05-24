@@ -1,7 +1,8 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client'
 import Header from './Header';
-import Content from './Content';
+import Consent from './Consent';
+import "../css/index.css"
 
 import {
   createBrowserRouter,
@@ -11,7 +12,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Content/>,
+    element: <Consent/>,
   }
 //   ,
 //   {path: "/A", element:<div>A</div>}
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
 
 export default function App() {
   return (
-    <div>
+    <div className='container'>
         <Header/>
         <RouterProvider router={router} />
     </div>
