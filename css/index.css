@@ -95,6 +95,55 @@ body {
     margin-right: 10px;
 }
 
-.button_g-recaptcha .button_captcha-outlined {
+.footer_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #012147;
+    color: white;
+    font-size: 12px;
+    margin: 40px 20px 0px;
+}
 
+.footer_row img {
+    width: 40px;
+}
+
+.change_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 10px 40px;
+    border: 1px solid rgb(226, 222, 222);
+    border-radius: 10px;
+    line-height: 25px;
+    padding-bottom: 40px;
+    
+}
+
+.change_main .change_row {
+    margin-bottom: 20px;
+}
+
+.change_main .change_consent {
+    text-align: center;
+    color: rgb(18, 44, 72);
+}
+
+hr {
+    width: 200px;
+    background-color: rgba(237, 232, 232, 0.726);
+}
+
+.button_change {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_change Button {
+    margin-bottom: 10px;
 }
