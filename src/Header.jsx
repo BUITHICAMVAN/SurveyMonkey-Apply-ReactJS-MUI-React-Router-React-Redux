@@ -10,16 +10,16 @@ import {
 import ChangeMind from './ChangeMind';
 
 
-const router = createBrowserRouter([
-  {
-    //path mặc định để biết chỗ dẫn đến đâu
-    path: "/ChangeMind",
-    // khi route đến path trên thì sẽ render ra 
-    element: <ChangeMind/>
-  }
-//   ,
-//   {path: "/A", element:<div>A</div>}
-]);
+// const router = createBrowserRouter([
+//   {
+//     //path mặc định để biết chỗ dẫn đến đâu
+//     path: "/ChangeMind",
+//     // khi route đến path trên thì sẽ render ra 
+//     element: <ChangeMind/>
+//   }
+// //   ,
+// //   {path: "/A", element:<div>A</div>}
+// ]);
 
 
 export default function Header() {

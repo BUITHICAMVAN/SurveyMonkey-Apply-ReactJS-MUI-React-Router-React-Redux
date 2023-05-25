@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import "../css/index.css";
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 export default function Consent() {
     // // cac bien la 1 trang thai 
@@ -60,7 +61,7 @@ export default function Consent() {
             <br/>
             <div className='button_g-recaptcha'>
               <Button className="button button_captcha-outlined" variant="outlined">Cancel</Button>
-              <Button className = 'button button_captcha-contained' variant="contained">I have read and agree with the terms of use</Button>
+              <Button className = 'button button_captcha-contained' variant="contained"><Link to="/FillForm">I have read and agree with the terms of use</Link></Button>
             </div>
           </form>
         </div>

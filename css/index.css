@@ -147,3 +147,16 @@ hr {
 .button_change Button {
     margin-bottom: 10px;
 }
+
+.fill_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 10px 40px;
+    border: 1px solid rgb(226, 222, 222);
+    border-radius: 10px;
+    line-height: 25px;
+    padding-bottom: 40px;
+}

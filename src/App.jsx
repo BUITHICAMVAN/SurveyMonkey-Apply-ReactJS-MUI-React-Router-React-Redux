@@ -4,6 +4,9 @@ import Header from './Header';
 import Consent from './Consent';
 import Footer from './Footer';
 import ChangeMind from './ChangeMind';
+import FillForm from './FillForm';
+import InforFill from './InforFill';
+
 import "../css/index.css"
 
 import {
@@ -22,6 +25,14 @@ const router = createBrowserRouter([
   {    
     path: "/ChangeMind",
     element: <ChangeMind/>}
+  ,
+  {    
+    path: "/FillForm",
+    element: <FillForm/>}
+    ,
+  {    
+    path: "/InforFill",
+    element: <InforFill/>}
 //   ,
 //   {path: "/A", element:<div>A</div>}
 ]);
