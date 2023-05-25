@@ -60,7 +60,7 @@ export default function FirstForm() {
         if (checkboxValues.mother || checkboxValues.father || checkboxValues.preferNotSay) {
             setTimeout(() => {
                 navigate('/SecondForm');
-            }, 1000)
+            }, 300)
         }
     }, [checkboxValues, navigate])
     // listed out all of the things that change inside the hook

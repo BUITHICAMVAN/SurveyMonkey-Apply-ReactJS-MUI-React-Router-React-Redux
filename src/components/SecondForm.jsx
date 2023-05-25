@@ -7,7 +7,9 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import { Button } from '@mui/material';
 
+import '../css/index.css'
 
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
@@ -44,8 +46,9 @@ export default function SecondForm() {
           <div className='form_bottom-title'>
             <h2>What language is spoken in your household?</h2>
           </div>
-          <div className='form_bottom-checkbox checkbox-autocomplete'>
-             <Autocomplete
+          <div className='form_bottom-language'>
+            <div className='form_bottom-checkbox checkbox-autocomplete'>
+               <Autocomplete
               multiple
               id="checkboxes-tags-demo"
               options={language}
@@ -64,9 +67,13 @@ export default function SecondForm() {
               )}
               style={{ width: 500 }}
               renderInput={(params) => (
-                <TextField {...params} label="Checkboxes" placeholder="Favorites" />
+                <TextField {...params} label="Search.." placeholder="Favorites" />
               )}
             />
+            </div>
+            <div className='form_bottom-button'>
+              <Button className = 'button button_captcha-contained' variant="contained"><Link className='link-white' to="/ThirdForm">Continue</Link></Button>
+            </div>
           </div>
         </div>
       </div>

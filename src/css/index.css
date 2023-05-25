@@ -190,6 +190,17 @@ hr {
     text-decoration: none;
 }
 
+.second_form-main {
+    display: flex;
+        flex-direction: column;
+        margin: 10px 50px;
+        padding: 10px 40px;
+        border: 1px solid rgb(226, 222, 222);
+        border-radius: 10px;
+        line-height: 25px;
+        padding-bottom: 40px;
+}
+
 .second_form-top {
     display: flex;
     flex-direction: row;
@@ -206,8 +217,13 @@ hr {
     text-align: center;
 }
 
-.form_bottom-checkbox {
+.form_bottom-language {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.form_bottom-checkbox {
+    margin-bottom: 20px;
 }
