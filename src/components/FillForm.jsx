@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import { TablePagination, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
+import "../css/index.css"
 
 export default function FillForm() {
     const [page, setPage] = useState(1);

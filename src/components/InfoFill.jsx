@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import {TextField} from '@mui/material';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function InforFill() {
+import "../css/index.css"
+
+export default function InfoFill() {
      useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://www.google.com/recaptcha/api.js';
@@ -14,6 +15,7 @@ export default function InforFill() {
       document.body.removeChild(script);
     };
   }, []);
+  
   return (
     <div className='info_main'>
         <div className='info_content'>

@@ -1,52 +1,43 @@
 import React from 'react';
-import {createRoot} from 'react-dom/client'
-import Header from './Header';
-import Consent from './Consent';
-import Footer from './Footer';
-import ChangeMind from './ChangeMind';
-import FillForm from './FillForm';
-import InforFill from './InforFill';
-
-import "../css/index.css"
+import Root from './routes/Root';
+import FillForm from './components/FillForm';
+import Consent from './components/Consent';
+import ChangeMind from './components/ChangeMind';
+import InfoFill from './components/InfoFill'
+import "../src/css/index.css"
 
 import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
 
-
-// createBrowserRouter nhận các routes thành 1 array
-const router = createBrowserRouter([
+export default function App() {
+  const router = createBrowserRouter([
   {
-    // khi path ở / trang mặc định thì sẽ render Consent ra
     path: "/",
-    element: <Consent/>
-  },
-  {    
-    path: "/ChangeMind",
-    element: <ChangeMind/>}
-  ,
-  {    
-    path: "/FillForm",
-    element: <FillForm/>}
-    ,
-  {    
-    path: "/InforFill",
-    element: <InforFill/>}
-//   ,
-//   {path: "/A", element:<div>A</div>}
+    element: <Root />,
+  children: [
+    {
+      path: "/",
+      element: <Consent/>
+    },
+    {
+      path: "/FillForm",
+      element: <FillForm/>
+    },
+    {
+      path: "/InfoFill",
+      element: <InfoFill/>
+    },
+    {
+      path: "/ChangeMind",
+      element: <ChangeMind/>
+    }
+  ]
+  }
 ]);
 
-export default function App() {
   return (
-    <div className='container'>
-      <RouterProvider router={router}>
-        <Header/>
-        {/* RouterProvider nên được bọc ở component nào có sự thay đổi
-        <RouterProvider router={router}/> */}
-        <Consent/>
-        <Footer/>
-      </RouterProvider>
-    </div>
-  )
+  <RouterProvider router={router}/>
+  );
 }

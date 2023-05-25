@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react'
-import "../css/index.css";
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+
+import "../css/index.css"
 
 export default function Consent() {
     // // cac bien la 1 trang thai 
@@ -12,20 +13,21 @@ export default function Consent() {
     // useEffect (() => {
     //     setAge(age + 1)
     // }, [])
- useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://www.google.com/recaptcha/api.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  useEffect(() => {
+      const script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js';
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []);
 
   return (
-    <div className='consent_main'>
+    <div className='consent_main' id='consent'>
       <div className='consent_content'>
         <div className='consent_top'>
           <div className='consent_item'>
@@ -61,7 +63,7 @@ export default function Consent() {
             <br/>
             <div className='button_g-recaptcha'>
               <Button className="button button_captcha-outlined" variant="outlined">Cancel</Button>
-              <Button className = 'button button_captcha-contained' variant="contained"><Link to="/FillForm">I have read and agree with the terms of use</Link></Button>
+              <Button className = 'button button_captcha-contained' variant="contained"><Link className='link-white' to="/FillForm">I have read and agree with the terms of use</Link></Button>
             </div>
           </form>
         </div>

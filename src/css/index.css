@@ -8,18 +8,24 @@ body {
 }
 
 .container {
-
+    width: 100%;
 }
 
 .header_main {
     background-color: #012147;
     color: white;
+    width: 100%;
 }
 
 .header_row {
     display: flex;
     flex-direction: row;
     padding: 5px 15px;
+    width: 100%;
+}
+
+.header_main .header_col-left {
+    width: 70%;
 }
 
 .header_logo-img {
@@ -37,9 +43,20 @@ body {
     line-height: 50px;
 }
 
-.header_route {
+.link-white {
+    color: white;
+    text-decoration: none;
+}
+
+.header_route-white {
     display: flex;
-    align-items: end;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_route-white h4 {
+    font-weight: 300;
+    line-height: 50px;
 }
 
 .consent_main {
