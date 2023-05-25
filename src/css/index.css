@@ -20,6 +20,7 @@ body {
 .header_row {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 5px 15px;
     width: 100%;
 }
@@ -176,4 +177,37 @@ hr {
     border-radius: 10px;
     line-height: 25px;
     padding-bottom: 40px;
+}
+
+.fill_main .fill_checkbox .checkbox {
+    border: 2px solid #012147;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.link-black {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.second_form-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second_form-top .back_form h4 {
+    font-weight: 300;
+    align-items: center;
+}
+
+.second_form-bottom .form_bottom-title {
+    text-align: center;
+}
+
+.form_bottom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

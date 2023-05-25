@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-
+import FirstForm from './FirstForm';
 import "../css/index.css"
 
 export default function Consent() {
@@ -63,7 +63,7 @@ export default function Consent() {
             <br/>
             <div className='button_g-recaptcha'>
               <Button className="button button_captcha-outlined" variant="outlined">Cancel</Button>
-              <Button className = 'button button_captcha-contained' variant="contained"><Link className='link-white' to="/FillForm">I have read and agree with the terms of use</Link></Button>
+              <Button className = 'button button_captcha-contained' variant="contained"><Link className='link-white' to="/FirstForm">I have read and agree with the terms of use</Link></Button>
             </div>
           </form>
         </div>

@@ -1,9 +1,11 @@
 import React from 'react';
 import Root from './routes/Root';
-import FillForm from './components/FillForm';
 import Consent from './components/Consent';
 import ChangeMind from './components/ChangeMind';
-import InfoFill from './components/InfoFill'
+import InfoFill from './components/InfoFill';
+import FirstForm from './components/FirstForm'
+import SecondForm from './components/SecondForm';
+import ThirdForm from './components/ThirdForm'
 import "../src/css/index.css"
 
 import {
@@ -22,8 +24,16 @@ export default function App() {
       element: <Consent/>
     },
     {
-      path: "/FillForm",
-      element: <FillForm/>
+      path: "/FirstForm",
+      element: <FirstForm/>
+    },
+    {
+      path: "/SecondForm",
+      element: <SecondForm/>
+    },
+    {
+      path: "/ThirdForm",
+      element: <ThirdForm/>
     },
     {
       path: "/InfoFill",
