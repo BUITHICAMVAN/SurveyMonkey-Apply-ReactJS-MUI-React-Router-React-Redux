@@ -10,9 +10,9 @@ import FormHelperText from '@mui/material/FormHelperText';
 import '../css/index.css'
 
 function MyFormHelperText() {
-  const { focused, value} = useFormControl() || {};
+  const { focused, value } = useFormControl() || {};
 
-    const remainingChars = React.useMemo(() => {
+  const remainingChars = React.useMemo(() => {
     const maxChars = 2000;
     const charsLeft = maxChars - (value ? value.length : 0);
     return charsLeft >= 0 ? charsLeft : 0;
@@ -23,9 +23,10 @@ function MyFormHelperText() {
       return `${remainingChars} characters left`;
     }
   }, [focused, remainingChars]);
-  
+
   return <FormHelperText>{helperText}</FormHelperText>;
 }
+
 
 export default function ThirdForm() {
   const [page, setPage] = useState(1);
@@ -60,14 +61,14 @@ export default function ThirdForm() {
             <h2>Please tell us which touchscreen game, app or story you use most often with your child and why?</h2>
           </div>
           <div className='form_bottom-text'>
-            <FormControl sx={{ width: '80%'}}>
+            <FormControl fullWidth>
               <OutlinedInput placeholder="Please enter text" />
               <MyFormHelperText />
             </FormControl>
           </div>
 
           <div className='form_bottom-button'>
-            <Button className = 'button button_captcha-contained' variant="contained"><Link className='link-white' to="/ThirdForm">Continue</Link>
+            <Button className = 'button button_captcha-contained' variant="contained"><Link className='link-white' to="/InfoFill">Continue</Link>
             </Button>
           </div>
         </div>

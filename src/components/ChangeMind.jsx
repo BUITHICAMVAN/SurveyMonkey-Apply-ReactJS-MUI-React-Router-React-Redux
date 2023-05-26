@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 import "../css/index.css"
 
 export default function ChangeMind() {
@@ -15,8 +17,8 @@ export default function ChangeMind() {
           Are you sure you no longer want to take the survey?
         </div>
         <div className='change_row button_change'>
-          <div className='button button_change-contained' ><Button variant="contained">I have changed my mind</Button></div>
-          <div className="button button_change-outlined" ><Button variant="outlined">Back to survey</Button></div>
+          <div className='button button_change-contained' ><Button variant="contained"><Link className='link_change' to='/'>I have changed my mind</Link></Button></div>
+          <div className="button button_change-outlined" ><Button variant="outlined"><Link className='link-back' to='/FirstForm'>Back to survey</Link></Button></div>
         </div>
       </div>
     </div>
